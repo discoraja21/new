@@ -1,0 +1,237 @@
+<html>
+<head><center><strong><h1>REGISTRATION FORM</h1></strong></center>
+<title>Registration Form</title>
+
+<style type="text/css">
+ 
+ h3{color:white;}
+ 
+ #image{
+  align:right;
+  border-right:2.5px dashed red;
+  border-top:2.5px dashed red;
+  
+       }
+ 
+ .basicdetails{
+  background-color:lightblue;
+  border : 2.5px dashed red;
+
+  }
+  
+  .info{
+   color:grey;
+   font-size:80%;
+   }
+   
+   .academic{
+   background-color:lightyellow;
+   border:2.5px dashed brown;
+   }
+   
+   #accountdetails{
+   background-color:#ffa27b;
+   border:2.5px dashed black;
+   }
+  
+  </style>
+
+</head>
+
+<form>
+
+
+<div>
+<img id="image" src="image.jpg" width="150" height="150" align="right" alt="passport pic">
+
+
+</div>
+
+
+
+
+<div class="basicdetails">
+<table>
+<center><h3>BASIC DETAILS</h3></center>
+ <tr>
+ 
+ <td><label>Form Number </label></td>
+ <td><input type="text" name="form number" size="20" required=" " /></td></tr>
+ <tr>
+ <td><label>Name </label></td>
+ <td><input type="text" name="name" size="20" required=" " /></td></tr>
+ <tr>
+ <td><label>Roll Number </label></td>
+ <td><input id="roll" type="number" name="roll" size="20" required=" " /></td>
+ </tr>
+ <tr><td><label>Gender</label></td>
+ <td><input type="radio" name="gender" value="male" /> Male 
+ <input type="radio" name="gender" value="female" /> Female </td></tr>
+ <tr><td><label>DOB </LABEL></td>
+ <td><input type="date"  required=" " /></td></tr>
+ 
+ <tr>
+ <td>PWD</td>
+ <td><input type="radio" name="pwd" value="yes" /> Yes 
+ <input type="radio" name="pwd" value="no" checked=" " /> No </td></tr>
+ 
+ <tr>
+ <td>Category</td>
+ <td><select name="category">
+    <option value="GEN">GEN</option>  
+    <option value="OBC">OBC</option>  
+    <option value="SC">SC</option>   
+    <option value="ST">ST</option></select>
+</td></tr>	
+ <tr>
+ <td>Adress :</td></tr>
+ <tr><td colspan="2"><textarea rows="7" cols="40">......</textarea></td></tr>
+ <tr>
+ <td colspan="2">PLEASE ENTER THE CORRECT PIN CODE</TD></tr>
+ <tr></tr>
+ <tr><td>Pin Code</td>
+ <td><input type="text" name="pin" size="20" required=" " /></td>
+ <td><p class="info">(please enter the correct pin as instructed)</p></td>
+ </tr>
+ <tr><td> Phone of the student</td>
+ <td><input type="number" name="student phone" size="18" maxlength="10" /></td></tr>
+ <tr><td> Phone of the Gaurdian </td>
+ <td><input type="number" name="guardian phone" size="20" maxlength="10" /></td></tr>
+ </table>
+ <hr />
+ </div>
+
+<div style="background-color:pink; color:white" align="middle">
+ <br />
+ <h2><STRONG>ACADEMIC INFORMATION</STRONG></h2>
+ <br />
+ </div>
+
+ 
+ 
+ <div class="academic">
+  <table>
+
+<tr></tr>
+<tr>
+<td><label>Course</label></td>
+<td><select name="course">
+<option value="btech">B.Tech</option> 
+<option value="mtech">M.Tech</option> 
+<option value="intM">Int.Math</option> 
+<option value="intP">Int.Phy</option> 
+<option value="barch">B.Arch</option> 
+</select></td>
+</tr>
+<tr>
+<td><label>Branch </label></td>
+<td><input type="text" size="20" required=" " /></td>
+</tr>
+<tr>
+<td>Semester</td>
+<td class="info"><select name="sem">
+<option value="1">1<sup>st</sup></option>
+<option value="2">2<sup>nd</sup></option>
+<option value="3">3<sup>rd</sup></option>
+<option value="4">4<sup>th</sup></option>
+<option value="5">5<sup>th</sup></option>
+<option value="6">6<sup>th</sup></option>
+<option value="7">7<sup>th</sup></option>
+<option value="8">8<sup>th</sup></option>
+</select>
+(for which allotment will be done)</td>
+</tr>
+<tr>
+<td><label>All India Rank</label></td>
+<td><input type="number" size="20" name="air" required=" " /></td>
+
+<td class="info">(2020, JEE Main)</td>
+</tr>
+
+<tr>
+<td><label>Category Rank<sub>if any</sub></label></td>
+<td><input type="number" size="20" name="cat-rank" /></td>
+<td class="info">(2020, JEE Main)</td>
+</tr>
+ 
+<tr>
+<td><label>CGPA</label></td>
+<td><input type="decimal"></td>
+</tr>
+
+<tr>
+<td><label>Backlog</label></td>
+<td><input type="radio" name="backlog" value="yes" /> Yes <input type="radio" name="backlog" value="no" /> No </td>
+</tr>
+
+<tr>
+<td><label>Hostel Accomodation</label></td>
+<td><input type="radio" name="hostel" value="yes" /> Yes <input type="radio" name="hostel" value="no" /> No </td>
+</tr>
+
+<tr>
+<td><label>Name of the Hostel</label></td>
+<td><input type="text" size="20" name="name of hostel" required=" " /></td>
+</tr>
+
+<tr>
+<td><label>Room Number</label></td>
+<td><input type="text" size="20" name="room number" required=" " /></td>
+</tr>
+
+
+ </table>
+ </div>
+ 
+ 
+ <div style="background-color:#9BDE9B; color:white" align="middle">
+ <br />
+ <h2><STRONG>ACCOUNT DETAILS FOR REFUND PROCESS</STRONG></h2>
+<br />
+ </div>
+ 
+ 
+ <div id="accountdetails">
+ <table>
+ 
+ <tr>
+ <td><label>Account Holder Name</label></td>
+ <td><input type="text" size="20" required=" " name="accnt_holder" /></td>
+ <td class="info">(As per bank passbook)</td>
+ </tr>
+ 
+ <tr>
+ <td><label>Account Number</label></td>
+ <td><input type="text" size="20" required=" " name="accnt_number" /></td>
+ </tr>
+ 
+ <tr>
+ <td><label>IFSC Code</label></td>
+ <td><input type="text" size="20" required=" " name="ifsc_code" /></td>
+ </tr>
+ 
+ <tr>
+ <td><label>Bank Name</label></td>
+ <td><input type="text" size="20" required=" " name="bank_name" /></td>
+ </tr>
+ 
+ <tr>
+ <td><label>Bank Branch</label></td>
+ <td><input type="text" size="20" required=" " name="bank_branch" /></td>
+ </tr>
+ 
+ </table>
+ </div>
+ 
+ 
+ 
+ 
+
+
+ <p align="center"><input type="submit" value="Submit" name="submit" /></p>
+ <p align="right"> <i>Sathwik Siva Kumar</i><p>
+  <p align="right"> <i>1906133</i><p>
+ </form>
+ </html>
+ 
+ 
